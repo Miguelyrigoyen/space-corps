@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
     } = body
 
     const tier = TIERS.find(t => t.id === tierId)
-    const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+    const appUrl = process.env.NEXT_PUBLIC_APP_URL
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
