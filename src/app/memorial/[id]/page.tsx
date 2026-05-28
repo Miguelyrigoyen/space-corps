@@ -1,4 +1,4 @@
-import { supabaseAdmin } from '@/lib/supabase'
+import { supabaseAdmin } from '@/lib/supabase-server'
 import TrajectoryTracker from '@/components/memorial/TrajectoryTracker'
 import { notFound } from 'next/navigation'
 import type { Reservation } from '@/types'
