@@ -14,7 +14,7 @@ export default function LoginPage() {
     setLoading(true)
     await supabase.auth.signInWithOtp({
       email,
-      options: { emailRedirectTo: `${window.location.origin}/dashboard` },
+      options: { emailRedirectTo: `${window.location.origin}/auth/callback` },
     })
     setSent(true)
     setLoading(false)
