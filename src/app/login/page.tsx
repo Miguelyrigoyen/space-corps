@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import { useSearchParams } from 'next/navigation'
 import { createBrowserClient } from '@/lib/supabase'
 import Link from 'next/link'
 
@@ -7,6 +8,8 @@ export default function LoginPage() {
   const [email, setEmail] = useState('')
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
+  const searchParams = useSearchParams()
+  const justPaid = searchParams.get('status') === 'success'
   const supabase = createBrowserClient()
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -23,6 +26,12 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center px-6 pt-20">
       <div className="glass-panel gold-border p-10 w-full max-w-md text-center">
+        {justPaid && (
+          <div className="mb-6 px-4 py-4 border border-gold/30 bg-gold/5 text-left">
+            <p className="text-gold text-xs font-semibold tracking-widest uppercase mb-1">Payment Received</p>
+            <p className="text-star/60 text-xs leading-relaxed">Your deposit is confirmed. Sign in with the same email you used at checkout to view your reservation.</p>
+          </div>
+        )}
         <p className="section-label mb-4">Customer Portal</p>
         <h1
           className="text-3xl font-light text-star mb-2"

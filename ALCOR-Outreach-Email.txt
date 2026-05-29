@@ -1,0 +1,48 @@
+TO: info@alcor.org
+CC: [Insert Alcor CEO / Technical Director email if known]
+SUBJECT: Partnership Proposal — Space Corps Orbital Cryogenic Preservation Platform
+
+Dear Alcor Team,
+
+My name is Miguel Yrigoyen. I am the founder of Space Corps, a company developing the world's first orbital cryogenic preservation platform.
+
+I am writing because I believe Space Corps and Alcor are natural partners — and together we can offer something no organization on Earth has ever been able to provide.
+
+THE CONCEPT
+
+Space Corps is building a small autonomous spacecraft that maintains vitrified biological material at cryogenic temperatures indefinitely in heliocentric orbit. The system uses a solar powered pulse tube cryocooler, multi layer insulation, a deployable sunshield, and an autonomous thermal control computer. No liquid nitrogen. No organizational dependency. No jurisdiction.
+
+This is not a memorial ashes service. This is active cryogenic preservation — the same vitrification standard Alcor uses today — placed permanently beyond the reach of any institution, government, or regulatory change.
+
+WHY I AM REACHING OUT TO ALCOR SPECIFICALLY
+
+Alcor is the gold standard in cryonics. Your vitrification protocols, your team's expertise, and your patient relationships represent decades of irreplaceable knowledge. Space Corps does not want to compete with Alcor. We want to extend what Alcor can offer.
+
+The partnership model I am proposing is simple:
+
+Phase 1 — Alcor performs all preservation work. Standard Alcor protocols, standard Alcor fees. The patient is vitrified and transferred to a Space Corps mission dewar.
+
+Phase 2 — Space Corps handles launch coordination, FAA licensing, spacecraft integration, and orbital deployment.
+
+Phase 3 — The spacecraft operates autonomously in heliocentric orbit. Telemetry feeds back to Earth. A permanent memorial page tracks the mission.
+
+Alcor earns its standard preservation fee on every Space Corps mission. Space Corps markets an Alcor premium tier that no competitor can match. Both organizations benefit.
+
+CURRENT STATUS
+
+Space Corps has a live website (spacecorps.netlify.app) with a working reservation system, customer portal, and waitlist. We have completed full R&D documentation covering spacecraft architecture, thermal systems, and component specifications. We have a legal analysis of the regulatory pathway, a 5 year financial model, and a full partnership pitch deck prepared specifically for this conversation.
+
+THE ASK
+
+I would like to request a 30 minute call with your technical team and leadership to walk through the proposal. I have a detailed pitch deck ready and would welcome Alcor's technical feedback on the preservation integration approach.
+
+I believe this partnership could become one of the most significant expansions of what cryonics can offer — and I would be honored to build it with Alcor.
+
+Thank you for your time and for everything Alcor has built over the past 50 years.
+
+Sincerely,
+
+Miguel Yrigoyen
+Founder, Space Corps
+spacecorps.netlify.app
+miguelandresyrigoyen@gmail.com

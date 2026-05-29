@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
+import { useSearchParams } from 'next/navigation'
 import { createBrowserClient } from '@/lib/supabase'
 import type { Reservation } from '@/types'
 import Link from 'next/link'
@@ -17,13 +18,16 @@ export default function CustomerDashboard() {
   const [reservations, setReservations] = useState<Reservation[]>([])
   const [loading, setLoading] = useState(true)
   const [user, setUser] = useState<{ email?: string; id: string } | null>(null)
+  const searchParams = useSearchParams()
+  const justPaid = searchParams.get('status') === 'success'
   const supabase = createBrowserClient()
 
   useEffect(() => {
     const load = async () => {
       const { data: { user } } = await supabase.auth.getUser()
       if (!user) {
-        window.location.href = '/login'
+        const suffix = justPaid ? '?status=success' : ''
+        window.location.href = `/login${suffix}`
         return
       }
       setUser({ email: user.email, id: user.id })
@@ -56,6 +60,15 @@ export default function CustomerDashboard() {
   return (
     <div className="min-h-screen pt-28 pb-20 px-6">
       <div className="max-w-4xl mx-auto">
+        {justPaid && (
+          <div className="mb-8 glass-panel border border-gold/30 bg-gold/5 px-6 py-5">
+            <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-1">Reservation Confirmed</p>
+            <p className="text-star/60 text-sm leading-relaxed">
+              Your deposit has been received. Your reservation is secured. We will be in touch within 48 hours to begin your mission planning.
+            </p>
+          </div>
+        )}
+
         <div className="flex items-start justify-between mb-12">
           <div>
             <p className="section-label mb-2">Customer Portal</p>
