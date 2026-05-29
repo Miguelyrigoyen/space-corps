@@ -30,6 +30,7 @@ export default function Nav() {
         <div className="hidden md:flex items-center gap-8 text-xs tracking-widest uppercase text-star/60">
           <Link href="/#tiers" className="hover:text-gold transition-colors">Programs</Link>
           <Link href="/configure" className="hover:text-gold transition-colors">Configure</Link>
+          <Link href="/faq" className="hover:text-gold transition-colors">FAQ</Link>
           <Link href="/dashboard" className="hover:text-gold transition-colors">My Journey</Link>
           <Link href="/configure" className="btn-gold text-xs px-6 py-2.5">
             Reserve
